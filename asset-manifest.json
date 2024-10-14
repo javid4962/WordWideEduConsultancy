@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/WordWideEduConsultancy/static/css/main.986c5308.css",
+    "main.js": "/WordWideEduConsultancy/static/js/main.8c6389aa.js",
+    "static/media/newZealand.png": "/WordWideEduConsultancy/static/media/newZealand.e03afa300486a2e82a33.png",
+    "static/media/usa.png": "/WordWideEduConsultancy/static/media/usa.78c8e8d3741175709c39.png",
+    "static/media/uk.png": "/WordWideEduConsultancy/static/media/uk.fd7d28fd9005f9c3d171.png",
+    "static/media/canada.png": "/WordWideEduConsultancy/static/media/canada.8a1cc48f3a0e937d5f89.png",
+    "static/media/australia.png": "/WordWideEduConsultancy/static/media/australia.65668c7dc1d1902c6003.png",
+    "static/media/ireland.png": "/WordWideEduConsultancy/static/media/ireland.f2aeeb628b71c721b081.png",
+    "index.html": "/WordWideEduConsultancy/index.html",
+    "main.986c5308.css.map": "/WordWideEduConsultancy/static/css/main.986c5308.css.map",
+    "main.8c6389aa.js.map": "/WordWideEduConsultancy/static/js/main.8c6389aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.986c5308.css",
+    "static/js/main.8c6389aa.js"
+  ]
+}
