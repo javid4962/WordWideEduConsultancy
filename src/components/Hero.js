@@ -7,6 +7,7 @@ import canada from '../assets/canada.png'
 import australia from '../assets/australia.png'
 import newZealand from '../assets/newZealand.png'
 import ireland from '../assets/ireland.png'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   // Array of objects with text and corresponding background images
@@ -48,7 +49,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 5000); // Change slide every 5 seconds
 
     // Clean up the interval on component unmount
     return () => clearInterval(interval);
@@ -56,24 +57,24 @@ const Hero = () => {
 
   return (
     <section
-      className="bg-cover bg-center py-20 transition-all duration-1000"
+      className="bg-cover bg-center py-20 transition-all duration-1000 min-height-128"
       style={{
         backgroundImage: slides[currentSlideIndex].backgroundImage,
         backgroundSize:'cover',
-        height: '100vh',
+        minHeight:'100vh'
       }}
     >
       <div className="container mx-auto text-center">
         {/* Carousel Text */}
-        <h1 className="text-5xl font-bold text-white transition-opacity duration-1000 [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)] leading-none">
+        <h1 className="text-3xl font-bold text-white transition-opacity duration-1000 [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)] leading-none sm:text-5xl">
           {slides[currentSlideIndex].text}
         </h1>
         <p className="mt-4 text-xl text-white [text-shadow:_0_1px_1px_rgb(0_0_0_/_0.3)] leading-5">
           Offering expert guidance for students in their academic journey.
         </p>
-        <button className="mt-8 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-gray-600">
-          Get Started
-        </button>
+        {/* <button className="mt-8 bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-gray-600  ">
+          <a href={'#home'} className='transition-all duration-1000'>Get Started</a>
+        </button> */}
       </div>
     </section>
   );

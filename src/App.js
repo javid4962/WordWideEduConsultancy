@@ -9,10 +9,17 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Hero from './components/Hero';
 
+import USAcountry from './countries/USAcountry'
+import UKcountry from './countries/UKcountry'
+import CanadaCountry from './countries/CanadaCountry'
+import IrelandCountry from './countries/IrelandCountry'
+import NewzealandCountry from './countries/NewzealandCountry'
+import AustraliaCountry from './countries/AustraliaCountry'
+
 function App() {
   return (
     <Router>
-      <div>
+      <div className='min-w-screen'>
         <Header />
         <Hero />
         <Routes>
@@ -20,6 +27,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/usa" element={<USAcountry />} />
+          <Route path="/uk" element={<UKcountry />} />
+          <Route path="/canada" element={<CanadaCountry />} />
+          <Route path="/australia" element={<AustraliaCountry />} />
+          <Route path="/newzealand" element={<NewzealandCountry />} />
+          <Route path="/ireland" element={<IrelandCountry />} />
         </Routes>
         <Footer />
       </div>
