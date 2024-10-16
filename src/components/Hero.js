@@ -1,13 +1,11 @@
 // src/components/Hero.js
 import React, { useState, useEffect } from 'react';
-// import wwec from '../assets/wwec.png'
 import usa from '../assets/usa.png'
 import uk from '../assets/uk.png'
 import canada from '../assets/canada.png'
 import australia from '../assets/australia.png'
 import newZealand from '../assets/newZealand.png'
 import ireland from '../assets/ireland.png'
-import { Link } from 'react-router-dom';
 
 const Hero = () => {
   // Array of objects with text and corresponding background images

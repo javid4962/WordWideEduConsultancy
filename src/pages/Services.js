@@ -1,5 +1,5 @@
 // src/pages/Services.js
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import usa from '../assets/usa.png'
@@ -43,7 +43,6 @@ const Services = () => {
           }}>
             <h3 className="text-2xl font-bold text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">{country.name}</h3>
             <h5 className="mt-4 text-white [text-shadow:_0_1px_1px_rgb(0_0_0_/_0.9)]">{country.description}</h5>
-            {/* <img src={country.backgroundImage} /> */}
           </div>
         ))}
       </div>

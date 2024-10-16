@@ -1,8 +1,8 @@
 // src/components/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import logo from '../assets/wwec.png'
 
@@ -36,7 +36,8 @@ const Header = () => {
             <div className="flex flex-shrink-0 items-center">
             <h1 className="text-3xl font-bold text-white">
           {/* <Link to="/">WWEC</Link> */}
-          <Link to='/'><img src={logo} height={'100px'} width={'100px'} /></Link>
+          <Link to='/'><img src={logo} height={'100px'} width={'100px'} alt='WorldWide Edu Consultancy'
+           /></Link>
         </h1>
             </div>
             <div className="hidden sm:ml-6 sm:block">

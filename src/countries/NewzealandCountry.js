@@ -1,6 +1,5 @@
 import React from 'react'
 import nz from '../assets/nz.png'
-import nz1 from '../assets/nz1.png'
 import nz2 from '../assets/nz2.png'
 import nz3 from '../assets/nz3.png'
 import nz4 from '../assets/nz4.png'
