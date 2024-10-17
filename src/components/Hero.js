@@ -1,5 +1,6 @@
 // src/components/Hero.js
 import React, { useState, useEffect } from 'react';
+import wwec from '../assets/wwec1.png'
 import usa from '../assets/usa.png'
 import uk from '../assets/uk.png'
 import canada from '../assets/canada.png'
@@ -7,13 +8,14 @@ import australia from '../assets/australia.png'
 import newZealand from '../assets/newZealand.png'
 import ireland from '../assets/ireland.png'
 
+
 const Hero = () => {
   // Array of objects with text and corresponding background images
   const slides = [
-    // {
-    //   text: 'WorldWide Education and Careers',
-    //   backgroundImage: `url(${wwec})`, 
-    // },
+    {
+      text: 'WorldWide Education and Careers',
+      backgroundImage: `url(${wwec})`, 
+    },
     {
       text: 'Your Gateway to Global Education',
       backgroundImage: `url(${usa})`, 

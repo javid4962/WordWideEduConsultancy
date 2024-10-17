@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {branch.map((i, index)=>{
             return (
-        <div className={index+1<branch.length?"border-r-2 border-black":""} key={index}>{console.log(index,branch.length)}
+        <div className={index+1<branch.length?"border-r-2 border-black":""} key={index}>
             <h1 className="text-2xl text-red-500 [text-shadow:_0_1px_1px_rgb(255_255_255_/_0.5)]">
               {i.name}
             </h1>
