@@ -20,7 +20,7 @@ function classNames(...classes) {
 const Header = () => {
   return (
     <>
-    <Disclosure as="nav" className="bg-white sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-[#FEF2F2] sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className=" flex items-center sm:hidden">
@@ -69,7 +69,7 @@ const Header = () => {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                item.current ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
                 'block rounded-md px-3 py-2 text-base font-medium',
               )}
             >

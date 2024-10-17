@@ -15,16 +15,22 @@ import CanadaCountry from './countries/CanadaCountry'
 import IrelandCountry from './countries/IrelandCountry'
 import NewzealandCountry from './countries/NewzealandCountry'
 import AustraliaCountry from './countries/AustraliaCountry'
+import Management from './pages/About/Management';
+import Association from './pages/About/Association';
+import Vision from './pages/About/Vision';
 
 function App() {
   return (
     <Router>
-      <div className='min-w-screen'>
+      <div className='min-w-screen '>
         <Header />
         <Hero />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about/management" element={<Management />} />
+          <Route path="/about/association" element={<Association />} />
+          <Route path="/about/vision" element={<Vision />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/usa" element={<USAcountry />} />

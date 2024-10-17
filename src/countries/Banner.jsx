@@ -3,20 +3,22 @@ import { Link } from "react-router-dom";
 
 function Banner(props) {
   return (
-    <div className="grid grid-cols-5 border border-2 border-black min-w-screen rounded-lg m-3 bg-[#effef6]">
+    <div className="grid grid-cols-5 gap-2 rounded-lg p-3 bg-[#effef6] rounded-lg max-w-[99vw] m-auto items-start">
       
       {/* Linkes aside section */}
-      <aside className="min-h-20 border border-1 border-black p-3 flex flex-col hidden md:block ">
-        <Link to='/usa' className="block">Study in USA</Link>
-        <Link to='/uk' className="block">Study in UK</Link>
-        <Link to='/canada' className="block">Study in Canada</Link>
-        <Link to='/newzealand' className="block">Study in New Zealand</Link>
-        <Link to='/ireland' className="block">Study in Ireland</Link>
-        <Link to='/australia' className="block">Study in Australia</Link>
+      <aside className=" border border-r-0 border-black p-3 flex flex-col hidden md:block rounded-lg bg-black text-white sticky top-[5rem]">
+        <div className="flex flex-col gap-2 ">
+        <Link to='/usa' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Study in USA</Link>
+        <Link to='/uk' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Study in UK</Link>
+        <Link to='/canada' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Study in Canada</Link>
+        <Link to='/newzealand' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Study in New Zealand</Link>
+        <Link to='/ireland' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Study in Ireland</Link>
+        <Link to='/australia' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Study in Australia</Link>
+        </div>
       </aside>
 
       {/* The article section */}
-      <article className="min-h-20 border border-1 border-black p-3 grid grid-cols-1 col-span-5 md:col-span-4 sm:grid-cols-2">
+      <article className="min-h-20 border border-1 border-black p-3 grid grid-cols-1 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-black text-white">
         <h1 className="font-bold p-2 text-2xl">Study {props.country.toUpperCase()}</h1>
         <span></span>
         <img src={props.img} alt={props.country} className="w-3/4 m-auto col-span-2 sm:col-span-1 rounded-lg" />

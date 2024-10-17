@@ -1,33 +1,29 @@
 // src/pages/About.js
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect } from "react";
+import {  useLocation } from "react-router-dom";
+import Banner from "./Banner";
+
+const data = {
+  title:"About Us",
+  subTitle:"Worldwide Edu Consultants / Education and Careers",
+  content:["Worldwide Education Consultants / Education and Careers is an organization which runs with a motto and running with a primary mission to help students to fulfil their abroad education dream with an ease."," Worldwide Edu Consultants / Education and Careers had forayed into the field of educational consulting in the year 2009. Since the day of inception, our primary objective was to provide the right kind of guidance and exposure to all our aspiring students. Our commitment is deep routed in the aspirations of our students to pursue their higher education.","Our constant effort lies in helping them mould their career by taking the right decisions and choosing the best universities/schools.At Worldwide Edu Consultants, we acknowledge the fact that the student’s effort is what takes them to focus, and we help them with our efforts to identify the pinnacle of success through our guidance and launching their career in the right direction. We are glad to be able to provide our services to so many students all round the year and it makes us feel proud to be one of the best Educational Consultants in India.","Each team member at Worldwide Educational Consultants knows the value of education and we work with utmost zeal to help each of our students to choose the best option.","Our success in the past years stands testimony to the effort and dedication by each of our team members and students!"]
+}
 
 const About = () => {
   const location = useLocation();
 
   useEffect(() => {
     // Scroll to the #about section if the URL contains #about
-    if (location.hash === '#about') {
-      const aboutSection = document.getElementById('about');
+    if (location.hash === "#about") {
+      const aboutSection = document.getElementById("about");
       if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
+        aboutSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
       }
     }
   }, [location]);
 
   return (
-    <div className="container mx-auto py-12 min-h-screen" id='about'>
-      <h2 className="text-4xl font-bold text-gray-800 mb-6" >About Us</h2>
-      <p className="text-lg text-gray-600">
-        World Wide Education has been helping students achieve their dreams of studying abroad since 2009. Our goal is to provide expert guidance and support for students who wish to study in the USA, UK, Canada, Australia, Ireland, and New Zealand.
-      </p>
-      <div id="about" className="mt-12">
-        <h3 className="text-3xl font-bold text-gray-800">Our Mission</h3>
-        <p className="text-lg text-gray-600 mt-4">
-          Our mission is to provide students with expert guidance and support for their education abroad...
-        </p>
-      </div>
-    </div>
+    <Banner title={data.title} subTitle={data.subTitle} content={data.content} />
   );
 };
 

@@ -45,7 +45,7 @@ const Home = () => {
           Your one-stop solution for studying abroad in countries like the USA, UK, Canada, Australia, Ireland, and New Zealand.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 no-wrap">
         {countries.map((country, index) => (
           <Link to={country.to}>
           <div key={index} className="border p-6 rounded-lg shadow-lg bg-white min-h-60 hover:scale-105 duration-1000" style={{

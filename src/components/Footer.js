@@ -28,7 +28,7 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto text-center">
         <p className="text-lg mb-5">Contact Us:</p>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {branch.map((i, index)=>{
             return (
         <div className={index+1<branch.length?"border-r-2 border-black":""} key={index}>{console.log(index,branch.length)}
