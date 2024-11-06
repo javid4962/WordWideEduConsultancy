@@ -84,7 +84,7 @@ const Home = () => {
           UK, Canada, Australia, Ireland, and New Zealand.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 no-wrap">
+      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 no-wrap">
         {countries.map((country, index) => (
           <Link to={country.to}>
             <div
@@ -96,7 +96,16 @@ const Home = () => {
                 backgroundSize: "cover",
               }}
             >
-              <span className=" flex gap-2 text-2xl font-bold text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">{country.name}<img src={country.flag} alt={country.name} key={index} typeof="gif" className="drop-shadow-2xl" />
+              <span className=" flex gap-2 text-2xl font-bold text-white [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
+                {country.name}
+                <img
+                  src={country.flag}
+                  alt={country.name}
+                  key={index}
+                  typeof="gif"
+                  className="drop-shadow-2xl"
+                  loading="lazy"
+                />
               </span>
               <h5 className="mt-4 text-white [text-shadow:_0_1px_1px_rgb(0_0_0_/_0.9)]">
                 {country.description}

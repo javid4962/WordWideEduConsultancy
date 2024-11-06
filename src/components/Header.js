@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Home', to: '/', current: false },
   { name: 'About', to: '/about#about', current: false },
   { name: 'Services', to: '/services#services', current: false },
+  { name: 'Careers', to: '/careers', current: false },
   { name: 'Contact', to: '/contact#contact', current: false },
 ]
 
@@ -37,7 +38,7 @@ const Header = () => {
             <h1 className="text-3xl font-bold text-white">
           {/* <Link to="/">WWEC</Link> */}
           <Link to='/'><img src={logo} height={'100px'} width={'100px'} alt='WorldWide Edu Consultancy'
-           /></Link>
+           loading='lazy'/></Link>
         </h1>
             </div>
             <div className="hidden sm:ml-6 sm:block">

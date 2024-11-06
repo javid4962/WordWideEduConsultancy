@@ -13,7 +13,7 @@ const Hero = () => {
   // Array of objects with text and corresponding background images
   const slides = [
     {
-      text: 'WorldWide Education and Careers',
+      text: '',
       backgroundImage: `url(${wwec})`, 
     },
     {
@@ -57,11 +57,11 @@ const Hero = () => {
 
   return (
     <section
-      className="bg-cover bg-center py-20 transition-all duration-1000 min-height-128"
+      className="bg-cover bg-center py-20 transition-all duration-1000 "
       style={{
         backgroundImage: slides[currentSlideIndex].backgroundImage,
         backgroundSize:'cover',
-        minHeight:'100vh'
+        minHeight:'90vh'
       }}
     >
       <div className="container mx-auto text-center">

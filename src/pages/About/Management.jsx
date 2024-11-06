@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../Banner'
+import Banner from './Banner'
 
 const data = {
   title:"Our Company",

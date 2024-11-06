@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
 import Contact from './pages/Contact';
+import Careers from './pages/Careers';
 import Hero from './components/Hero';
+
 
 import USAcountry from './countries/USAcountry'
 import UKcountry from './countries/UKcountry'
@@ -33,6 +35,7 @@ function App() {
           <Route path="/about/vision" element={<Vision />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/usa" element={<USAcountry />} />
           <Route path="/uk" element={<UKcountry />} />
           <Route path="/canada" element={<CanadaCountry />} />

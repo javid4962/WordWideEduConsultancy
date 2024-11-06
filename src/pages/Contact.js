@@ -16,8 +16,8 @@ const Contact = () => {
   }, [location]);
   return (
     <div className="container mx-auto py-12 min-h-screen" id='contact'>
-      <h2 className="text-4xl font-bold text-gray-800 mb-6" >Contact Us</h2>
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <h2 className="text-4xl font-bold  mb-6" >Contact Us</h2>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name

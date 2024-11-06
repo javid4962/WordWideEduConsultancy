@@ -1,7 +1,7 @@
 import React from 'react'
 import canada0 from '../assets/canada0.png'
 import canada1 from '../assets/canada1.png'
-import canada2 from '../assets/canada2.png'
+// import canada2 from '../assets/canada2.png'
 import canada3 from '../assets/canada3.png'
 import canada4 from '../assets/canada4.png'
 import Banner from './Banner';
@@ -25,7 +25,8 @@ const CanadaCountry = () => {
      <Banner
       country={data.country}
         img={canada0}
-        slides={[canada1,canada2,canada3,canada4]}
+        // slides={[canada1, canada2, canada3,canada4]}
+        slides={[canada1,canada3,canada4]}
         population={data.population}
         capital={data.capital}
         area={data.area}

@@ -21,7 +21,7 @@ function Banner(props) {
       <article className="min-h-20 border border-1 border-black p-3 grid grid-cols-1 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-black text-white">
         <h1 className="font-bold p-2 text-2xl">Study {props.country.toUpperCase()}</h1>
         <span></span>
-        <img src={props.img} alt={props.country} className="w-3/4 m-auto col-span-2 sm:col-span-1 rounded-lg" />
+        <img src={props.img} alt={props.country} className="w-3/4 m-auto col-span-2 sm:col-span-1 rounded-lg" loading="lazy" />
         <div className="flex flex-col justify-items-start">
           <span className="my-2">Country Facts</span>
           <ul>
@@ -46,7 +46,7 @@ function Banner(props) {
       <section className="flex flex-wrap gap-2 items-center justify-evenly w-full col-span-2 m-3 hidden sm:flex">
      
        {props.slides.map((i, index)=>{
-        return <img src={i} alt={i.country} className="rounded-lg " key={index}/>
+        return <img src={i} alt={i.country} className="rounded-lg  min-w-[100px] min-h-[200px]" key={index} loading="lazy"/>
        })}
     
       </section>
