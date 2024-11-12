@@ -18,16 +18,7 @@ function Banner(props) {
       </aside>
 
       {/* The article section */}
-      <article className="min-h-20 border border-1 border-black p-4 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-white text-blac">
-      <div className="flex gap-2 sm:block md:hidden flex-wrap m-y3">
-        <Link to='/usa' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in USA</Link>
-        <Link to='/uk' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in UK</Link>
-        <Link to='/canada' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in Canada</Link>
-        <Link to='/newzealand' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in New Zealand</Link>
-        <Link to='/ireland' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in Ireland</Link>
-        <Link to='/australia' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in Australia</Link>
-        </div>
-
+      <article className="min-h-20 border border-1 border-black p-3 grid grid-cols-1 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-white text-black">
         <h1 className="font-bold p-2 text-2xl">Study {props.country.toUpperCase()}</h1>
         <span></span>
         <img src={props.img} alt={props.country} className="w-3/4 m-auto col-span-2 sm:col-span-1 rounded-lg" loading="lazy" />
@@ -64,6 +55,7 @@ function Banner(props) {
       className="flex justify-center items-center w-[75vw] h-[50vh] m-3 rounded-lg m-auto"></iframe>
       </section>
       </article>
+     
      
 
     </div>
