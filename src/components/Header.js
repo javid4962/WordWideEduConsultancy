@@ -10,7 +10,8 @@ const navigation = [
   { name: 'Home', to: '/', current: false },
   { name: 'About', to: '/about#about', current: false },
   { name: 'Services', to: '/services#services', current: false },
-  { name: 'Careers', to: '/careers', current: false },
+  { name: 'Careers', to: '/careers#careers', current: false },
+  { name: 'Tests', to: '/tests#tests', current: false },
   { name: 'Contact', to: '/contact#contact', current: false },
 ]
 
@@ -19,6 +20,7 @@ function classNames(...classes) {
 }
 
 const Header = () => {
+
   return (
     <>
     <Disclosure as="nav" className="bg-[#FEF2F2] sticky top-0 z-50">
@@ -29,8 +31,8 @@ const Header = () => {
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
+              <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden close" />
+              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block close"/>
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">

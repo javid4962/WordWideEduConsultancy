@@ -12,8 +12,8 @@ function Careers() {
     <div className="rounded-lg p-3 bg-[#effef6] rounded-lg max-w-[99vw] m-auto items-start">
 
     <div
-      className="min-h-20 border border-1 border-black p-4 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-black text-white"
-      id="services"
+      className="min-h-20 border border-1 border-black p-4 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-white text-black"
+      id="careers"
     >
 
 

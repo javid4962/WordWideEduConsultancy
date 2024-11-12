@@ -20,35 +20,35 @@ const Banner = (props) => {
   return (
     <div className="grid grid-cols-5 gap-2 rounded-lg p-3 bg-[#effef6] rounded-lg max-w-[99vw] m-auto items-start bg-white text-black">
       {/* Linkes aside section */}
-      <aside className=" border border-r-0 border-black p-3 flex flex-col hidden md:block rounded-lg bg-black text-white sticky top-[5rem]">
+      <aside className=" border border-black p-3 flex flex-col hidden md:block rounded-lg bg-white text-black sticky top-[5rem]">
         <div className="flex flex-col gap-2 ">
-        <Link to='/about' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">About Us</Link>
-        <Link to='/about/management' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Management</Link>
-        <Link to='/about/association' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Association</Link>
-        <Link to='/about/vision' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Vision & Missions</Link>
-       
+          <Link to='/about' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">About Us</Link>
+          <Link to='/about/management' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">Management</Link>
+          <Link to='/about/association' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">Association</Link>
+          <Link to='/about/vision' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">Vision & Missions</Link>
+
         </div>
       </aside>
       <div
-        className="min-h-20 border border-1 border-black p-4 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-black text-white"
+        className="min-h-20 border border-1 border-black p-4 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-white text-black"
         id="about"
       >
-        
-        
-    <h2 className="text-4xl font-bold  mb-6">{props.title}</h2>
-    <h4 className="text-2xl font-bold  mb-2 text-blue-500">{props.subTitle}</h4>
-    {props.content.map((i,index)=>{
-        return <p className="text-lg py-2" key={index}>{i}</p>
-    })}
 
         {/* <Management /> */}
-        <div className="flex gap-2 sm:block md:hidden flex-wrap m-y3 ">
-        <Link to='/about' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">About Us</Link>
-        <Link to='/about/management' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Management</Link>
-        <Link to='/about/association' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Association</Link>
-        <Link to='/about/vision' className="block bg-gray-900 p-2 rounded-lg text-white hover:bg-gray-700 delay-[50ms]">Vision & Missions</Link>
-       
+        <div className="flex gap-2 sm:block md:hidden flex-wrap m-y3  ">
+          <Link to='/about' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">About Us</Link>
+          <Link to='/about/management' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">Management</Link>
+          <Link to='/about/association' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">Association</Link>
+          <Link to='/about/vision' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-300 delay-[50ms]">Vision & Missions</Link>
+
         </div>
+        <h2 className="text-4xl font-bold  mb-6">{props.title}</h2>
+        <h4 className="text-2xl font-bold  mb-2 text-blue-500">{props.subTitle}</h4>
+        {props.content.map((i, index) => {
+          return <p className="text-lg py-2" key={index}>{i}</p>
+        })}
+
+
       </div>
     </div>
   );
