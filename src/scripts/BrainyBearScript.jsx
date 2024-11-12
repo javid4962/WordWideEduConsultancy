@@ -13,6 +13,7 @@ const BrainyBearScript = () => {
       n.appendChild(y);
     })(window, document, 'https://api.brainybear.ai/cdn/js/bear', '.js?id=1093');
   }, []);
+  
 
   return null;
 };
