@@ -75,7 +75,7 @@ const Home = () => {
   }, [location]);
   return (
     <div className="bg-white py-12 min-h-screen" id="home">
-      <div className="container mx-auto my-4">
+      <div className="container mx-auto my-4  text-center">
         <h2 className="text-4xl font-bold text-gray-800">
           Welcome to World Wide Education
         </h2>

@@ -18,13 +18,22 @@ function Banner(props) {
       </aside>
 
       {/* The article section */}
-      <article className="min-h-20 border border-1 border-black p-3 grid grid-cols-1 col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-white text-black">
+      <article className="min-h-20 border border-1 border-black p-4  col-span-5 md:col-span-4 sm:grid-cols-2 rounded-lg bg-white text-black">
+      <div className="flex gap-2 sm:block md:hidden flex-wrap ">
+        <Link to='/usa' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in USA</Link>
+        <Link to='/uk' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in UK</Link>
+        <Link to='/canada' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in Canada</Link>
+        <Link to='/newzealand' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in New Zealand</Link>
+        <Link to='/ireland' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in Ireland</Link>
+        <Link to='/australia' className="block bg-gray-100 p-2 rounded-lg text-black hover:bg-gray-400 delay-[50ms]">Study in Australia</Link>
+        </div>
         <h1 className="font-bold p-2 text-2xl">Study {props.country.toUpperCase()}</h1>
         <span></span>
-        <img src={props.img} alt={props.country} className="w-3/4 m-auto col-span-2 sm:col-span-1 rounded-lg" loading="lazy" />
-        <div className="flex flex-col justify-items-start">
-          <span className="my-2">Country Facts</span>
+        <div className="grid grid-cols-2">
+        <img src={props.img} alt={props.country} className="m-auto col-span-2 sm:col-span-1 rounded-lg" loading="lazy" />
+        <div className="flex">
           <ul>
+          <span className="my-2">Country Facts</span>
             <li>Capital: <b>{props.capital}</b></li>
             <li>Population: <b>{props.population}</b></li>
             <li>Area: <b>{props.area}</b></li>
@@ -32,6 +41,7 @@ function Banner(props) {
             <li>Religion: <b>{props.religion}</b></li>
             <li>Continent: <b>{props.continent}</b></li>
           </ul>
+        </div>
         </div>
 
         <div className="content w-full col-span-2">
